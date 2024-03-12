@@ -1,0 +1,24 @@
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    align-content: center;
+  }
+
+  .dropdown-item {
+    background:brown;
+    color: antiquewhite;
+  }
+
+  h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: brown;
+    color: blanchedalmond;
+  }
+
+  #info_feriado.div.h3 {
+    text-align: center;
+  }
