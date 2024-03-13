@@ -22,3 +22,14 @@
   #info_feriado.div.h3 {
     text-align: center;
   }
+
+  #contenedor {
+    margin-left:  10px;
+    margin-right: 10px;
+
+  }
+
+ #bandera {
+  margin: 50px;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.8);
+ }

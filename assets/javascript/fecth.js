@@ -33,42 +33,53 @@ let request = (pais_code) => {
 
     let plantilla_final="";
     let Pais="";
+    let div_bandera = document.getElementById("Pais_img");
 
     switch (pais_code) {
       case "EC":
         Pais="Ecuador";
+       
         break;
       case "AR":
         Pais="Argentina";
+        
         break;
       case "CL":
         Pais="Chile";
+  
         break;
       case "PE":
         Pais="Peru";
+    
         break;
       case "CO":
         Pais="Colombia";
+     
         break;
       case "PY":
         Pais="Paraguay";
+       
         break;
       case "UY":
         Pais="Uruguay";
+    
         break;
       case "BO":
         Pais="Bolivia";
+      
         break;
       case "BR":
         Pais="Brasil";
+     
         break;
       case "VE":
         Pais="Venezuela";
         break; 
     }
 
+    div_bandera.innerHTML=`<img id="bandera" ; class="img-fluid  rounded" ; src="public/images/${Pais}.jpg">`;
     let h3= document.getElementById("head_h3");
-    h3.innerHTML= `<h3 style="padding-left: 40px; padding-top: 20px" >Los Feriados de ${Pais} son:</h3>`;
+    h3.innerHTML= `<h3 style="padding-top: 20px" >Los Feriados de ${Pais} son:</h3>`;
 
 
     let div = document.getElementById("info_feriados");
@@ -80,12 +91,12 @@ let request = (pais_code) => {
       let date = element.date;
       let name = element.localName;
 
-      let plantilla = `<div style="padding-top: 10px ;padding-left: 40px">
-                       <spam>Dia: ${date} </spam>
-                     </div>
-                      <div>
-                       <spam style="padding-bottom:10px; padding-left: 40px">Nombre: ${name} </spam>
-                      </div>`;
+      let plantilla = `<div style="padding-top: 10px">
+                            <spam>Dia: ${date} </spam>
+                       </div>
+                       <div style="padding-bottom:10px">
+                             <spam>Nombre: ${name} </spam>
+                       </div>`;
 
       plantilla_final = plantilla_final + plantilla;
 
